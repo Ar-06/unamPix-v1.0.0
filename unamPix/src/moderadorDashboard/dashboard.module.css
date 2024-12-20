@@ -1,0 +1,98 @@
+.dashboardContainer {
+    display: flex;
+    background-color: white;
+}
+
+.dashboardContainer > * {
+    margin: 0;
+}
+
+.content {
+    margin-right:120px; 
+    padding: 20px;
+    flex: 1; 
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea */
+    gap: 20px; /* Espacio entre tarjetas */
+    margin: 20px;
+    padding-left: 250px;
+}
+
+.Card {
+    background-color: #ffffff6e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295);
+    border-radius: 10px;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.cardContent {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+}
+  
+.cardHeader span {
+    color: #444; /* Color del texto del encabezado */
+}
+
+.CardTable {
+    flex: 1 1 100%; /* Fuerza la tarjeta a ocupar todo el ancho */
+    margin-top: 20px;
+    border-collapse: collapse;
+    height: auto;
+}
+
+.CardTable .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem; /* Reducir el tamaño de letra */
+}
+
+.CardTable .table thead th {
+    text-align: left;
+    font-weight: 500;
+    color: #666;
+    padding: 10px; /* Reducir padding */
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.CardTable .table tbody td {
+    padding: 10px; /* Reducir padding */
+    color: #333;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem; /* Ajuste adicional del tamaño de letra */
+}
+  
+  
+  
+.CardTable .contentUser:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease-in-out;
+}
+  
+  /* Ajuste de tamaño y alineación de texto */
+.CardTable .table th,
+.CardTable .table td {
+    text-align: left;
+    font-size: 0.9rem; /* Ajustar todas las celdas */
+}
+

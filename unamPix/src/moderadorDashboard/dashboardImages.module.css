@@ -1,0 +1,49 @@
+.DashboardContainerImages {
+    display: flex;
+}
+
+.DashboardContainerImages > * {
+    margin: 0;
+    font-family: Arial;
+}
+
+.DashboardImages {
+    margin-left: 50px; 
+    padding: 20px;
+    flex: 1; 
+}
+
+.ImagesHeader {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.ImagesContent {
+    padding-left: 200px;
+}
+
+.Images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+.Images img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.btnDelete {
+    position: absolute;
+    margin-top: -20px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    transition: ease 0.3s all;
+}
+
+.btnDelete:hover {
+    background-color: rgb(243, 64, 64);
+}

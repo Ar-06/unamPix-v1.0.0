@@ -1,0 +1,144 @@
+.eventosContainer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 140px;
+    background-color: white;
+  }
+  
+  .eventosContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+  }
+  
+  .eventosItems {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .eventoCard {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 360px; /* Aumentamos el ancho */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .eventoCard:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Efecto de levantamiento */
+  }
+  
+  .eventoCard h2 {
+    font-size: 1.8rem; /* Hacemos el título más grande */
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .eventoCard span {
+    display: block;
+    font-size: 1rem; /* Tamaño del texto más grande */
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .btnInfo {
+    background-color: #2563EB;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btnInfo:hover {
+    background-color: #3772f2;
+    transform: scale(1.05); /* Efecto de agrandar ligeramente */
+  }
+
+/* Estilos para la Modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Contenido de la Modal */
+  .modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: left; /* Alinear texto a la izquierda */
+    font-size: 1.1rem; /* Texto más grande */
+    line-height: 1.6;
+  }
+  
+  /* Botón de Cerrar */
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    color: #333;
+  }
+  
+  /* Botón de Participar */
+  .btnParticipar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #2563EB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btnParticipar:hover {
+    background-color: #3772f2;
+  }
+  
+  /* Encabezados */
+  .modalContent h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .modalContent p {
+    margin: 10px 0;
+  }
+  
+  

@@ -1,0 +1,125 @@
+
+.fileUploadContainer {
+  position: relative;
+  top: 120px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.uploadForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.previewImage {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.dropZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 2px dashed #dfe1e5;
+  border-radius: 12px;
+  background-color: #fafafa;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  text-align: center;
+  height: 500px; 
+}
+
+.dropZone.dragging {
+  background-color: #f1f5f9;
+  border-color: #0073e6;
+}
+
+.fileInput {
+  display: none; /* Ocultamos el input porque solo queremos el comportamiento interactivo */
+}
+
+.uploadIcon {
+  font-size: 3rem;
+  color: #0073e6;
+}
+
+.uploadText {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.uploadDescription {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.fileSelected {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+  word-wrap: break-word;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #0073e6;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #0073e6;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}

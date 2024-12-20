@@ -1,0 +1,52 @@
+.card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.horizontal {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Relación de aspecto horizontal */
+}
+
+.card.vertical {
+  width: 100%;
+  aspect-ratio: 9 / 16; /* Relación de aspecto vertical */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen rellene el contenedor */
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05); /* Zoom al pasar el cursor */
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 120px;
+  background-color: white;
+}
+
+.containerItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.message {
+  color: #666;
+  text-align: center;
+}

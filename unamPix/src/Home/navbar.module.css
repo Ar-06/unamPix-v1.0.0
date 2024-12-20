@@ -1,0 +1,120 @@
+/* Navbar.css */
+.navbar {
+  margin-top: 18px;
+  margin-left: 10px;
+  display: flex;
+  position: fixed;
+  width: 98%;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #2563EB;
+  border-radius: 18px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLogo h2 {
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.logoImg {
+  width: 70px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbarMenu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  padding-left: 50px;
+}
+
+.navbarMenu a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  padding: 5px;
+  font-size: 17px;
+  color: white;
+}
+
+.navbarMenu a:hover {
+  color: rgb(226, 210, 210);
+  border-radius: 4px;
+}
+
+.navbarButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbarButtons span {
+  font-size: 16px;
+  margin-right: 1rem; 
+}
+
+.navbarButtons a {
+  text-decoration: none;
+}
+
+.registerButton,
+.loginButton {
+  padding: 0.5rem 1rem;
+  margin-right: 7px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registerButton {
+  background-color: #FACC15;
+  color: #2563EB;
+}
+
+.loginButton {
+  background-color: transparent;
+  color: white;
+}
+
+.registerButton:hover {
+  background-color: #fdda4ef6;
+}
+
+.btnLogout {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btnAdd {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.profileIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff; /* Color de fondo, puedes cambiarlo */
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 18px; /* Tamaño de las iniciales */
+}

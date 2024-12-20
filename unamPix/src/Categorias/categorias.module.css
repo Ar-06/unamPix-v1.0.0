@@ -1,0 +1,48 @@
+.containerCategory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 130px;
+    justify-content: center;
+}
+
+.buttonCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    width: 600px;
+    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.buttonCategory:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.buttonCategory:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.buttonCategory span {
+    font-size: 20px; /* Tamaño de fuente ajustado */
+    font-weight: bold;
+    color: #333;
+    margin-top: auto; 
+}
+
+.buttonCategory img {
+    width: 100%; /* Ocupa todo el ancho del botón */
+    height: 400px; /* Altura fija para mantener proporción */
+    object-fit: cover; /* Ajusta la imagen al contenedor */ 
+    border-radius: 10px 10px 10px 10px; /* Solo esquinas superiores redondeadas */
+}
